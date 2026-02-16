@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1e1e2f, #2c2c54);
+  color: white;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+}
+
+.hero h1 span {
+  color: #ff4d6d;
+}
+
+.controls {
+  text-align: center;
+  margin: 20px;
+}
+
+.controls button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  background: #ff4d6d;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.controls button:hover {
+  transform: scale(1.1);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-info {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.card-info button {
+  background: rgba(0,0,0,0.6);
+  border: none;
+  color: white;
+  padding: 8px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  padding-top: 100px;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+  border-radius: 20px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+/* Error popup */
+.error-popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #ff4d4d;
+  padding: 15px 20px;
+  border-radius: 10px;
+  display: none;
+}
