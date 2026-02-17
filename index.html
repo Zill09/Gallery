@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+<header class="hero">
+  <h1><span id="namaKamu">[Her Picture]</span> </h1>
+  <p> kekurangan foto 😢</p>
+</header>
+
+
+<section class="gallery" id="gallery">
+
+  <!-- =============================
+       TAMBAHKAN FOTO DISINI
+       GANTI src DENGAN FILE DI FOLDER images
+  ============================== -->
+  <div class="card" data-album="romantis">
+    <img src="images/IMG-4.jpg" onclick="openModal(this)">
+    <div class="card-info">
+      <button onclick="toggleFavorite(this)">❤️</button>
+    </div>
+  </div>
+  
+  
+  <div class="card" data-album="romantis">
+    <img src="images/IMG-5.jpg" onclick="openModal(this)">
+    <div class="card-info">
+      <button onclick="toggleFavorite(this)">❤️</button>
+    </div>
+  </div>
+  
+  
+  <div class="card" data-album="romantis">
+    <img src="images/IMG-6.jpg" onclick="openModal(this)">
+    <div class="card-info">
+      <button onclick="toggleFavorite(this)">❤️</button>
+    </div>
+  </div>
+  
+  
+  <div class="card" data-album="romantis">
+    <img src="images/IMG-7.jpg" onclick="openModal(this)">
+    <div class="card-info">
+      <button onclick="toggleFavorite(this)">❤️</button>
+    </div>
+  </div>
+  
+  
+  <div class="card" data-album="romantis">
+    <img src="images/IMG-8.jpg" onclick="openModal(this)">
+    <div class="card-info">
+      <button onclick="toggleFavorite(this)">❤️</button>
+    </div>
+  </div>
+
+
+  <div class="card" data-album="romantis">
+    <img src="images/IMG-9.jpg" onclick="openModal(this)">
+    <div class="card-info">
+      <button onclick="toggleFavorite(this)">❤️</button>
+    </div>
+  </div>
+  
+  
+  <div class="card" data-album="romantis">
+    <img src="images/IMG-10.jpg" onclick="openModal(this)">
+    <div class="card-info">
+      <button onclick="toggleFavorite(this)">❤️</button>
+    </div>
+  </div>
+  
+  
+  <div class="card" data-album="lucu">
+    <img src="images/IMG-2.jpg" onclick="openModal(this)">
+    <div class="card-info">
+      <button onclick="toggleFavorite(this)">❤️</button>
+    </div>
+  </div>
+
+  <div class="card" data-album="romantis">
+    <img src="images/IMG-3.jpg" onclick="openModal(this)">
+    <div class="card-info">
+      <button onclick="toggleFavorite(this)">❤️</button>
+    </div>
+  </div>
+
+</section>
+
+<!-- Modal Preview -->
+<div id="modal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+
+<!-- Popup Error -->
+<div id="errorPopup" class="error-popup">
+  <p>⚠️ Gambar tidak ditemukan!</p>
+</div>
+
+</body>
+</html>
